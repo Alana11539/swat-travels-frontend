@@ -1,0 +1,70 @@
+.customization-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background-color: #f8f9f6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.customization-container {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.customization-container h1 {
+  color: #1f5a52;
+  margin-bottom: 10px;
+}
+
+.customization-container p {
+  color: #1f5a52;
+  margin-bottom: 30px;
+}
+
+.customization-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #1f5a52;
+}
+
+.customization-form input,
+.customization-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.customization-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.book-now-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #6C9882;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.book-now-btn:hover {
+  background-color: #174C49;
+}

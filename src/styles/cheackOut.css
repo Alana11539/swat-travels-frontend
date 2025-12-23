@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+ body, .checkout-page { font-family: 'Poppins', 
+    sans-serif; background-color:
+     #F8F9F6; margin: 0; }
+      
+
+.checkout-page {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: flex-start; /* top align */
+  padding: 140px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.checkout-container {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.checkout-container h1 {
+  color: #1f5a52;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.checkout-subtitle {
+  color: #1f5a52;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.checkout-form h2 {
+  color: #1f5a52;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 2px solid #6C9882;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+/* Inputs and textarea */
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+  outline: none;
+  border-color: #6C9882;
+  box-shadow: 0 0 5px rgba(108, 152, 130, 0.5);
+}
+
+.checkout-form textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Submit button */
+.confirm-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 30px;
+  border: none;
+  background-color: #6C9882;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-btn:hover {
+  background-color: #174C49;
+}
+checkout-page {
+  position: relative;
+  z-index: 5;
+}
+
+.confirm-btn {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+/* Payment Method Dropdown */
+.checkout-form select {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.checkout-form select:focus {
+  outline: none;
+  border-color: #6C9882;
+  box-shadow: 0 0 5px rgba(108, 152, 130, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .checkout-container {
+    padding: 30px 20px;
+  }
+
+  .checkout-form h2 {
+    font-size: 18px;
+  }
+}

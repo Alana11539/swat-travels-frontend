@@ -1,0 +1,26 @@
+@import "./pages/globals.css";
+
+/* Vite default styles removed and replaced with project-wide base tweaks
+   so the layout can match the Swat‑Gilgit Travels designs. */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+main {
+  width: 100%;
+  background: var(--bg-white);
+  /* offset for fixed top bar + header so content starts under it */
+  padding-top: 140px;
+}
+
+@media (max-width: 900px) {
+  main {
+    /* on mobile only the main header is fixed at top */
+    padding-top: 80px;
+  }
+}

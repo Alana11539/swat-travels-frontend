@@ -1,0 +1,279 @@
+/* About Hero */
+.about-hero {
+  background-color: #1f5a52;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+
+.about-hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  animation: fadeInDown 0.8s ease;
+}
+
+.about-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.9;
+  animation: fadeInUp 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+/* About Tours Section */
+.about-tours {
+  padding: 80px 0;
+  background-color: var(--bg-white);
+}
+
+.about-tours-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.about-tours-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  animation: fadeInLeft 0.8s ease;
+}
+
+.about-tours-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.about-tours-text {
+  animation: fadeInRight 0.8s ease;
+}
+
+.about-tours-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-tours-text h2 span {
+  color: var(--primary-color);
+}
+
+.about-tours-text > p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.about-tours-text h3 {
+  font-size: 18px;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.about-tours-text ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.about-tours-text ul li {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+/* About Owner Section */
+.section-title{
+  text-align: center;
+}
+.about-owner {
+  padding: 80px 0;
+  background-color: var(--bg-light);
+}
+
+.about-owner-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.owner-card {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: rgb(51, 50, 50);
+  border: 1px solid rgb(255, 241, 241);
+}
+
+.owner-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 4px solid var(--primary-color);
+}
+
+.owner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.owner-info h3 {
+  font-size: 22px;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.owner-info .role {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.owner-info p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+/* Gallery Section */
+.trips-gallery {
+  padding: 80px 0;
+  background-color: white;
+  width:100%;
+}
+
+.gallery-slider {
+  position: relative;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gallery-dot.active {
+  background-color: var(--primary-color);
+}
+
+.gallery-caption {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--text-light);
+}
+/* ===== About Tours Carousel (ADDITION ONLY) ===== */
+
+.about-tours-image.carousel {
+  position: relative;
+}
+
+.about-tours-image.carousel img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  animation: tourFade 0.6s ease;
+}
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+  background-color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+/* Animation */
+@keyframes tourFade {
+  from {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-tours-image.carousel img {
+    height: 280px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 28px;
+  }
+
+  .about-tours-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-tours-image {
+    order: -1;
+  }
+
+  .owner-card {
+    padding: 30px 20px;
+  }
+
+  .gallery-image img {
+    height: 250px;
+  }
+}
