@@ -178,45 +178,14 @@ The project uses:
 
 ## 🧪 Testing
 
-Currently, no testing framework is configured. To add tests:
-```bash
-npm install --save-dev @testing-library/react @testing-library/jest-dom vitest
-```
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-1. Connect your GitHub repository
-2. Set environment variables in Vercel dashboard
-3. Deploy automatically on push to main branch
-
-### Netlify
-1. Build command: `npm run build`
-2. Publish directory: `dist`
-3. Add environment variables in Netlify dashboard
-
-### Manual Deployment
-1. Run `npm run build`
-2. Upload `dist` folder to your hosting service
-3. Configure server to serve `index.html` for all routes
-
-## 🔧 Configuration Files
-
-### vite.config.js
-Vite build configuration with React plugin
-
-### eslint.config.js
-ESLint rules for code quality
-
-### package.json
-Project dependencies and scripts
+Currently, no testing framework is configured.
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
 5. Open a Pull Request
 
 ## 📄 License
@@ -226,20 +195,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Authors
 
 - **Alana11539** - *Initial work*
-
-## 🐛 Bug Reports
-
-If you discover any bugs, please create an issue on GitHub.
-
-## 📮 Support
-
-For support, email support@swattravels.com or open an issue.
-
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
-- Vite for lightning-fast builds
-- All open-source contributors
 
 ---
 
