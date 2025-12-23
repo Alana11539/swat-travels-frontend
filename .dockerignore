@@ -1,0 +1,34 @@
+# Docker Ignore File
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.env
+.env.local
+.env.*.local
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+.DS_Store
+Thumbs.db
+
+.git/
+.gitignore
+
+README.md
+CHANGELOG.md
+
+.github/
+
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Keep source files but ignore dev artifacts
+coverage/
+.nyc_output/
