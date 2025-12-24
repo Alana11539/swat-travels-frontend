@@ -116,7 +116,7 @@ function ToursPage() {
                             ? tour.image
                             : tour.image.startsWith("http")
                             ? tour.image
-                            : `${import.meta.env.VITE_UPLOADS_URL}/${tour.image}`
+                            : `${import.meta.env.VITE_API_URL.replace('/api', '')}/${tour.image.replace(/\\/g, '/')}`
                           : "/placeholder.svg"
                       }
                       alt={tour.name}
