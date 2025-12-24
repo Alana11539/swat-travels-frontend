@@ -111,7 +111,7 @@ import { Link } from "react-router-dom";
 
 const heroImages = [
   "/mountain-tour-landscape.jpg",
-  "/hunza-valley-beautiful-scenery-mountains.jpg",
+  "/hunza.jpg",
   "/beautiful-green-mountain-lake-pakistan.jpg",
   "/swat-valley-green-hills-river.jpg",
   "/fairy-meadows-nanga-parbat-view.jpg",
