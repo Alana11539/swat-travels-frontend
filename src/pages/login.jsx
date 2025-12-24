@@ -24,8 +24,8 @@ function LoginForm() {
     try {
       const endpoint =
         role === "admin"
-          ? "http://localhost:5000/api/admin/login"
-          : "http://localhost:5000/api/users/login";
+          ? `${import.meta.env.VITE_API_URL}/admin/login`
+          : `${import.meta.env.VITE_API_URL}/users/login`;
 
       const { data } = await axios.post(endpoint, formData);
 

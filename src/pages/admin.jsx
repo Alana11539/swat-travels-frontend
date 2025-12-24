@@ -180,7 +180,7 @@ const handleLogout = () => {
                       <td>
                         {tour.image && (
                           <img
-                            src={`http://localhost:5000/${tour.image}`}
+                            src={`${import.meta.env.VITE_UPLOADS_URL}/${tour.image}`}
                             alt={tour.title}
                             style={{ width: "100px", height: "60px", objectFit: "cover" }}
                           />

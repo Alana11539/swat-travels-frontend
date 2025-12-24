@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const ADMIN_API = axios.create({
-  baseURL: "http://localhost:5000/api/admin",
+  baseURL: `${import.meta.env.VITE_API_URL}/admin`,
   headers: {
     "Content-Type": "application/json",
     // agar JWT token hai

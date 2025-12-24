@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const TOURS_API = axios.create({
-  baseURL: "http://localhost:5000/api/tours", // just /api/tours
+  baseURL: `${import.meta.env.VITE_API_URL}/tours`,
   headers: {
     "Content-Type": "multipart/form-data",
     Authorization: `Bearer ${localStorage.getItem("accessToken")}`,

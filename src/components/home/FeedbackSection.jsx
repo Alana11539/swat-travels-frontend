@@ -19,7 +19,7 @@ function FeedbackForm({ onReviewAdded }) {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/api/reviews/add", formData);
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/reviews/add`, formData);
       alert("Thank you for your feedback!");
       setFormData({ userName: "", rating: "", comment: "" });
       onReviewAdded(res.data.review); // notify parent to update testimonials

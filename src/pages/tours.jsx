@@ -29,7 +29,7 @@ function ToursPage() {
   useEffect(() => {
     const fetchTours = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/tours/");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/tours/`);
         const backendTours = Array.isArray(res.data)
           ? res.data
           : res.data.tours || [];
@@ -116,7 +116,7 @@ function ToursPage() {
                             ? tour.image
                             : tour.image.startsWith("http")
                             ? tour.image
-                            : `http://localhost:5000/${tour.image}`
+                            : `${import.meta.env.VITE_UPLOADS_URL}/${tour.image}`
                           : "/placeholder.svg"
                       }
                       alt={tour.name}
